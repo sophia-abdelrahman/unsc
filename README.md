@@ -19,6 +19,7 @@ One important assumption made was that any variables affecting FDI that are also
 Below are some multiple regression models designed for the analysis, and their results: (simpler models not included due to lower R<sup>2</sup><sub>A</sub>
 
   ### 1. Immediate effects model
+  
     <font size="15"> **Y<sub>it</sub> = 𝛽<sub>0</sub> + 𝛽<sub>1</sub>onUNSC + 𝛽<sub>2</sub>postUNSC1 + 𝛽<sub>3</sub>postUNSC2 + 𝛽<sub>4</sub>postUNSC3 + 𝛽<sub>5</sub>postUNSC4 + 𝛽<sub>6</sub>postUNSC5 + 𝛄<sub>i</sub> + α<sub>t</sub> + ɛ<sub>it</sub>** </font>
     
   * This model consists of 6 dummy variables (generated in Stata from panel data):
@@ -28,7 +29,7 @@ Below are some multiple regression models designed for the analysis, and their r
       * ... and so on until `postUNSC5`
   This model hypothesizes UNSC membership will have an immediate impact on FDI inflow in the five years following membership on the UNSC.
   
-  ```stata
+  ```
   xi: areg FDIGDP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5 i.year, absorb(countryname)
   ```
   
@@ -40,7 +41,7 @@ Below are some multiple regression models designed for the analysis, and their r
 Same as immediate effects model, but postUNSC5 replaced postUNSC5plus (a variable that
 accounted for whether the country has left the UNSC for five years or more, and omitted years before the country’s UNSC membership)
 
-  ```stata
+  ```
   xi: areg FDIGDP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5plus i.year, absorb(countryname)
   ```
 
