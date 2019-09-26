@@ -26,23 +26,32 @@ Below are some multiple regression models designed for the analysis, and their r
       * `postUNSC1` indicates if the country is in the first year following membership
       * `postUNSC2` indicating the same as postUNSC1 but for the second year following membership
       * ... and so on until `postUNSC5`
-  This model hypothesizes UNSC membership will have an immediate impact on FDI inflow in the five years following membership on the UNSC.
+  This model hypothesizes UNSC membership will have an immediate impact on FDI inflow in the five years following membership on the UNSC
   
-  ```
-  xi: areg FDIGDP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5 i.year, absorb(countryname)
+  ```stata
+  xi: areg lnFDIBoP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5 i.year, absorb(countryname)
   ```
   
   # INSERT OUTPUT IMAGE
   
   ### 2. Fluctuating growth model**
-      <font size="15"> **Y<sub>it</sub> = 𝛽<sub>0</sub> + 𝛽<sub>1</sub>onUNSC + 𝛽<sub>2</sub>postUNSC1 + 𝛽<sub>3</sub>postUNSC2 + 𝛽<sub>4</sub>postUNSC3 + 𝛽<sub>5</sub>postUNSC4 + 𝛽<sub>6</sub>postUNSC5plus + 𝛄<sub>i</sub> + α<sub>t</sub> + ɛ<sub>it</sub>** </font>
+  <font size="15"> **Y<sub>it</sub> = 𝛽<sub>0</sub> + 𝛽<sub>1</sub>onUNSC + 𝛽<sub>2</sub>postUNSC1 + 𝛽<sub>3</sub>postUNSC2 + 𝛽<sub>4</sub>postUNSC3 + 𝛽<sub>5</sub>postUNSC4 + 𝛽<sub>6</sub>postUNSC5plus + 𝛄<sub>i</sub> + α<sub>t</sub> + ɛ<sub>it</sub>** </font>
 
-Same as immediate effects model, but postUNSC5 replaced postUNSC5plus (a variable that
-accounted for whether the country has left the UNSC for five years or more, and omitted years before the country’s UNSC membership)
+* Same as immediate effects model, but postUNSC5 replaced postUNSC5plus (a variable that
+accounts for whether the country has left the UNSC for five years or more, as well as the omitted years before the country’s UNSC membership)
 
-  ```
-  xi: areg FDIGDP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5plus i.year, absorb(countryname)
+  ```stata
+  xi: areg lnFDIBoP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5plus i.year, absorb(countryname)
   ```
 
   # INSERT OUTPUT IMAGE
+  
+  ### 3. Constant growth model**
+  <font size="15"> **Y<sub>it</sub> = 𝛽<sub>0</sub> + 𝛽<sub>1</sub>onUNSC + 𝛽<sub>2</sub>postUNSC1 + 𝛽<sub>3</sub>postUNSC2 + 𝛽<sub>4</sub>postUNSC3 + 𝛽<sub>5</sub>postUNSC4 + 𝛽<sub>6</sub>postUNSC5plus + 𝛄<sub>i</sub> + α<sub>t</sub> + ɛ<sub>it</sub>** </font>
+  
+  Unlike the above models, this model uses a second dummy variable that takes on the value 1 for all years following UNSC membership.
+  
+  ```stata
+  xi: areg lnFDIBoP onUNSC postUNSCperm i.year, absorb(countryname)
+  ```
 
