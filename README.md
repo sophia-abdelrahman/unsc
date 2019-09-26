@@ -25,4 +25,4 @@ Below are some multiple regression models designed for the analysis, and their r
       * `postUNSC2` indicating the same as postUNSC1 but for the second year following membership
       * ... and so on until `postUNSC5`
       
-  ### Yit = 𝛽0 + 𝛽1onUNSC + 𝛽2postUNSC1 + 𝛽3postUNSC2 + 𝛽4postUNSC3 + 𝛽5postUNSC4 + 𝛽6postUNSC5 + 𝛄i + αt + ɛit 
+  ### Y<sub>it<sub/> = 𝛽0 + 𝛽1onUNSC + 𝛽2postUNSC1 + 𝛽3postUNSC2 + 𝛽4postUNSC3 + 𝛽5postUNSC4 + 𝛽6postUNSC5 + 𝛄i + αt + ɛit 
