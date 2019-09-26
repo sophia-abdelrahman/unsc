@@ -55,5 +55,5 @@ accounts for whether the country has left the UNSC for five years or more, as we
   xi: areg lnFDIBoP onUNSC postUNSCperm i.year, absorb(countryname)
   ```
 
-    <img align="center" img src="output/constantGrowth.PNG" width="525" height="125"/>
+    <img align="center" img src="output/constantGrowth.PNG" width="525" height="200"/>
 
