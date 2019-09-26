@@ -34,7 +34,7 @@ Below are some multiple regression models designed for the analysis, and their r
   
   # INSERT OUTPUT IMAGE
   
-  ### 2. Fluctuating growth model**
+  ### 2. Fluctuating growth model
   <font size="15"> **Y<sub>it</sub> = 𝛽<sub>0</sub> + 𝛽<sub>1</sub>onUNSC + 𝛽<sub>2</sub>postUNSC1 + 𝛽<sub>3</sub>postUNSC2 + 𝛽<sub>4</sub>postUNSC3 + 𝛽<sub>5</sub>postUNSC4 + 𝛽<sub>6</sub>postUNSC5plus + 𝛄<sub>i</sub> + α<sub>t</sub> + ɛ<sub>it</sub>** </font>
 
 * Same as immediate effects model, but postUNSC5 replaced postUNSC5plus (a variable that
