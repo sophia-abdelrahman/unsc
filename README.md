@@ -32,7 +32,7 @@ Below are some multiple regression models designed for the analysis, and their r
   xi: areg lnFDIBoP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5 i.year, absorb(countryname)
   ```
   
-<img align="center" img src="output/immediateEffects.PNG" width="525" height="250"/>
+    <img align="center" img src="output/immediateEffects.PNG" width="525" height="250"/>
   
   ### 2. Fluctuating growth model
   <font size="15"> **Y<sub>it</sub> = 𝛽<sub>0</sub> + 𝛽<sub>1</sub>onUNSC + 𝛽<sub>2</sub>postUNSC1 + 𝛽<sub>3</sub>postUNSC2 + 𝛽<sub>4</sub>postUNSC3 + 𝛽<sub>5</sub>postUNSC4 + 𝛽<sub>6</sub>postUNSC5plus + 𝛄<sub>i</sub> + α<sub>t</sub> + ɛ<sub>it</sub>** </font>
@@ -44,7 +44,7 @@ accounts for whether the country has left the UNSC for five years or more, as we
   xi: areg lnFDIBoP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5plus i.year, absorb(countryname)
   ```
 
-<img align="center" img src="output/fluctuatingGrowth.PNG" width="525" height="250"/>
+    <img align="center" img src="output/fluctuatingGrowth.PNG" width="525" height="250"/>
   
   ### 3. Constant growth model
   <font size="15"> **Y<sub>it</sub> = 𝛽<sub>0</sub> + 𝛽<sub>1</sub>onUNSC + 𝛽<sub>2</sub>postUNSC1 + 𝛽<sub>3</sub>postUNSC2 + 𝛽<sub>4</sub>postUNSC3 + 𝛽<sub>5</sub>postUNSC4 + 𝛽<sub>6</sub>postUNSC5plus + 𝛄<sub>i</sub> + α<sub>t</sub> + ɛ<sub>it</sub>** </font>
@@ -55,5 +55,5 @@ accounts for whether the country has left the UNSC for five years or more, as we
   xi: areg lnFDIBoP onUNSC postUNSCperm i.year, absorb(countryname)
   ```
 
-<img align="center" img src="output/constantGrowth.PNG" width="525" height="250"/>
+    <img align="center" img src="output/constantGrowth.PNG" width="525" height="125"/>
 
