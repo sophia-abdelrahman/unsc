@@ -10,6 +10,7 @@ Multiple regression models with fixed effects were used for this analysis. Log-l
 | ln(FDIBoP)                        | 4361         | 19.77946 | 2.824037 | 2.302585 | 27.32179 |
 | Country Name                      | 193          | -        | -        | -        | -        |
 | Year                              | 4825         | 2005     | 7.21185  | 1993     | 2017     |
+
 *Table 1: Some summary statistics: panel data was compiled from World Bank and UNSC sources and cleaned*
 
 ## empirical models and results
