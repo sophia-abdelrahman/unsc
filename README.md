@@ -6,7 +6,7 @@ Multiple regression models with fixed effects were used for this analysis. Log-l
 ### some summary statistics
 | Variable                          | Observations | Mean     | Std. Err | Min      | Max      |
 |-----------------------------------|--------------|----------|----------|----------|----------|
-| FDI net inflow (BoP, Current US$) |              |          |          |          |          |
+| FDI net inflow (BoP, Current US$) | 4498         | 5.370463 | 18.99977 | -82.8921 | 773.928  |
 | ln(FDIBoP)                        | 4361         | 19.77946 | 2.824037 | 2.302585 | 27.32179 |
 | Country Name                      | 193          | -        | -        | -        | -        |
 | Year                              | 4825         | 2005     | 7.21185  | 1993     | 2017     |
