@@ -30,7 +30,7 @@ Below are some multiple regression models designed for the analysis, and their r
   
    ```stata
      xi: areg lnFDIBoP onUNSC postUNSC1 postUNSC2 postUNSC4 postUNSC3 postUNSC5 i.year, absorb(countryname)
-    ```
+   ```
   
     <img align="center" img src="output/immediateEffects.PNG" width="525" height="250"/>
   
