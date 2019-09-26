@@ -1,6 +1,6 @@
 # unsc
 ## Intro
-Investigating effect of non-permanent rotational membership on the United Nations Security Council ion inflow of Foreign Direct Investment (Balance of Payment, US dollars) for a final econometrics group project.
+Investigating effect of non-permanent rotational membership on the United Nations Security Council on inflow of Foreign Direct Investment (Balance of Payment, US dollars) for a final econometrics group project.
 
 Multiple regression models with fixed effects were used for this analysis. Log-linear transformations were used on the FDI Y-variable in order to be able to interpret coefficients as percentage point changes rather than dollar value changes.
 
